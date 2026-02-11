@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="pt-BR" data-bs-theme="auto" style="scroll-behavior: smooth;">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Palestra sobre o futuro da Inteligência Artificial" />
+    <title>A Nova Era da I.A. · Palestra</title>
+    
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="carousel.css" rel="stylesheet" />
+    
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      /* Estilo para as fotos dos palestrantes */
+      .speaker-img {
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+
+      /* Estilo para as imagens ilustrativas dentro do carrossel */
+      .feature-icon-img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        border: 3px solid rgba(255, 255, 255, 0.2);
+      }
+
+      /* Ajuste para a legenda do carrossel ter mais espaço para a imagem */
+      .carousel-caption {
+        bottom: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">IA - A nova era</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Início</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#palestrantes">Palestrantes</a></li>
+              <li class="nav-item"><a class="nav-link" href="#temas">Temas</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          
+          <div class="carousel-item active">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#00637a"/></svg>
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <div class="row align-items-center">
+                  <div class="col-lg-7">
+                    <h1>O Futuro da Inteligência Artificial.</h1>
+                    <p class="opacity-75">Junte-se às mentes que estão reescrevendo os limites da tecnologia e da interação humano-máquina.</p>
+                    <p><a class="btn btn-lg btn-light" href="#tema-mira">Ver a visão de Mira Murati</a></p>
+                  </div>
+                  <div class="col-lg-5 d-none d-lg-block text-end">
+                    <img src="https://remsoft.com.br/wp-content/uploads/2023/12/ia-futuro-rem-soft-sistemas.webp" alt="Futuro da IA" class="feature-icon-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#bf3600"/></svg>
+            <div class="container">
+              <div class="carousel-caption">
+                <div class="row align-items-center">
+                   <div class="col-lg-5 d-none d-lg-block text-start">
+                      <img src="https://images.unsplash.com/photo-1643116774075-acc00caa9a7b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Segurança em IA" class="feature-icon-img">
+                  </div>
+                  <div class="col-lg-7 text-end">
+                    <h1>Superinteligência Segura.</h1>
+                    <p>Como garantir que os próximos modelos sejam alinhados com os valores da humanidade?</p>
+                    <p><a class="btn btn-lg btn-light" href="#tema-ilya">Ver o painel de Ilya Sutskever</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#010433"/></svg>
+            <div class="container">
+              <div class="carousel-caption text-end">
+                 <div class="row align-items-center">
+                  <div class="col-lg-7 text-start">
+                    <h1>IA Constitucional.</h1>
+                    <p>Descubra as abordagens inovadoras para treinar sistemas robustos e transparentes.</p>
+                    <p><a class="btn btn-lg btn-light" href="#tema-dario">Conhecer a tese de Dario Amodei</a></p>
+                  </div>
+                   <div class="col-lg-5 d-none d-lg-block text-end">
+                      <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=500&auto=format&fit=crop" alt="Estrutura e Ordem" class="feature-icon-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div id="palestrantes"></div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+
+      <div class="container marketing">
+        <div class="row">
+          <div class="col-lg-4 text-center">
+            <img src="img/ilya_calvo.webp" class="bd-placeholder-img rounded-circle speaker-img mb-3" width="140" height="140" alt="Ilya Sutskever">
+            <h2 class="fw-normal">Ilya Sutskever</h2>
+            <p>Cofundador da Safe Superintelligence (SSI) e uma das mentes arquitetônicas por trás da revolução dos grandes modelos de linguagem.</p>
+            <p><a class="btn btn-secondary" href="#tema-ilya">Ver tema &raquo;</a></p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <img src="img/mira murati 1.jpg" class="bd-placeholder-img rounded-circle speaker-img mb-3" width="140" height="140" alt="Mira Murati">
+            <h2 class="fw-normal">Mira Murati</h2>
+            <p>Engenheira de ponta e ex-CTO da OpenAI. Liderou a implementação de produtos que mudaram o mundo, como o ChatGPT e o Sora.</p>
+            <p><a class="btn btn-secondary" href="#tema-mira">Ver tema &raquo;</a></p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <img src="img/Dario Amodei 1.webp" class="bd-placeholder-img rounded-circle speaker-img mb-3" width="140" height="140" alt="Dario Amodei">
+            <h2 class="fw-normal">Dario Amodei</h2>
+            <p>CEO da Anthropic e pioneiro na "IA Constitucional", focando no desenvolvimento de sistemas extremamente éticos, como o Claude.</p>
+            <p><a class="btn btn-secondary" href="#tema-dario">Ver tema &raquo;</a></p>
+          </div>
+        </div>
+
+        <hr class="featurette-divider" id="temas" />
+
+        <div class="row featurette" id="tema-ilya">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">
+              A busca pela Superinteligência.
+              <span class="text-body-secondary">O próximo grande salto.</span>
+            </h2>
+            <p class="lead">
+              Ilya Sutskever abordará os desafios técnicos e filosóficos de construir uma Inteligência Artificial Geral (AGI) que ultrapasse a capacidade humana, garantindo que ela seja fundamentalmente segura.
+            </p>
+          </div>
+          <div class="col-md-5">
+             <img src="img/ilya_calvo.webp" class="img-fluid mx-auto rounded shadow" width="500" height="500" style="object-fit: cover; aspect-ratio: 1/1;" alt="Ilya em destaque">
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette" id="tema-mira">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">
+              Da pesquisa para as mãos do usuário.
+              <span class="text-body-secondary">Moldando o mercado.</span>
+            </h2>
+            <p class="lead">
+              Mira Murati compartilhará sua visão sobre como transformar algoritmos complexos em ferramentas intuitivas que milhões de pessoas usam todos os dias para trabalhar, criar e se comunicar.
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img src="img/mira murati 1.jpg" class="img-fluid mx-auto rounded shadow" width="500" height="500" style="object-fit: cover; aspect-ratio: 1/1;" alt="Mira em destaque">
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette" id="tema-dario">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">
+              IA Constitucional em foco.
+              <span class="text-body-secondary">Segurança em primeiro lugar.</span>
+            </h2>
+            <p class="lead">
+              Dario Amodei discutirá como a Anthropic está treinando modelos (como o Claude) usando princípios e "constituições" claras para evitar comportamentos nocivos, mantendo a utilidade e a precisão.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img src="img/Dario Amodei 1.webp" class="img-fluid mx-auto rounded shadow" width="500" height="500" style="object-fit: cover; aspect-ratio: 1/1;" alt="Dario em destaque">
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+      </div>
+
+      <footer class="container">
+        <p class="float-end"><a href="#">Voltar ao topo</a></p>
+        <p>&copy; IA - A nova era  &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
+      </footer>
+    </main>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
